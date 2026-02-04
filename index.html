@@ -1,0 +1,40 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Expense Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Daily Expense Tracker</h1>
+    <div class="expense-form">
+        <input type="text" id="expense-name" placeholder="Expense Name">
+            <input type="number" id="expense-amount" placeholder="Amount">
+            <button id="add-expense">Add Expense</button>
+        </div>
+
+        <div class="income-form">
+            <input type="text" id="income-name" placeholder="Income Source">
+            <input type="number" id="income-amount" placeholder="Amount">
+            <button id="add-income">Add Income</button>
+        </div>
+
+        <div class="current-date-time">
+            <span id="current-date"></span>
+            <span id="current-time"></span>
+        </div>
+        <div class="expense-list">
+            <h2>Transactions</h2>
+            <div class="filter-date-container">
+                <label for="filter-date">View transactions for:</label>
+                <input type="date" id="filter-date">
+            </div>
+        <ul id="transactions"></ul>
+        <div class="total-summary">
+            <h3>Total Income: <span id="total-income">0.00</span></h3>
+            <h3>Total Expenses: <span id="total-expenses">0.00</span></h3>
+            <h3>Net Balance: <span id="net-balance">0.00</span></h3>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
